@@ -1,0 +1,235 @@
+/* font-family: 'Berkshire Swash', cursive;
+font-family: 'Josefin Slab', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Markazi Text', serif;
+font-family: 'Monoton', cursive; */
+body
+{
+    font-family: 'Markazi Text', serif;
+}
+#first-section 
+{
+    background: linear-gradient(to right,#bdc3c7,#2c3e50);
+}
+#first-section .container-fluid
+{
+    padding:3% 10% 5%;
+    
+}
+#first-section .container
+{
+    text-align: center;
+    padding-top: 5%;
+}
+.container-fluid
+{
+    padding: 5% 10%;
+}
+.container h1
+{
+    background:linear-gradient(#1a2a6c,#b21f1f,#fdbb2d);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+.button
+{
+    padding:1% 4%;
+    margin-top:1rem;
+
+}
+/* navigation bar  */
+
+
+.navbar-toggler:focus
+{
+background:#3B4371;
+}
+.nav-item
+{
+    margin:0px 12px;
+}
+.navbar-brand
+{
+    font-family: 'Monoton', cursive;
+    font-size: 2.4rem;
+    background:linear-gradient(to right,#03001e,#7303c0,#ec38bc,#fdeff9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.icons
+{
+    background:linear-gradient(#C6FFDD,#FBD786,#f7797d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent
+}
+/* SECTION TWO  */
+#second-section 
+{
+background: linear-gradient(to right,#ada996,#f2f2f2,#dbdbdb,#eaeaea);
+}
+.card-title
+{
+margin-bottom: 0;
+font-family: 'Berkshire Swash', cursive;
+}
+#second-section img
+{
+    filter:   sepia(10%) grayscale(50%);
+    
+}
+
+/* THIRD-SECTION  */
+#third-section .images
+{
+    filter:grayscale(80%) sepia(50%);
+}
+.third-heading
+{
+    font-size:2.8rem;
+    /* background: linear-gradient(#2980B9,#6DD5FA,#FFFFFF); */
+    background: linear-gradient(to right,#833ab4,#fd1d1d,#fcb045);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-weight: bold;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+/* fourth section  */
+#fourth-section 
+{
+background: linear-gradient(to right,#ada996,#f2f2f2,#dbdbdb,#eaeaea);
+}
+.card{
+    width: auto;
+}
+.myimage{
+
+width: 100%;
+height: 40vh;
+object-fit: cover;
+}
+#fifth-section{
+    text-align: center;
+}
+.round{
+    border-radius: 100%;
+    padding: 3% 25% 2%;
+    height:20vh;
+    /* width:40vw; */
+    margin: 3%;
+}
+#fifth-section .card-title{
+    padding-top:1%;
+}
+#fifth-section p{
+    line-height: 1;
+    margin-top:1rem;
+}
+.mycard{
+    padding: 0 16% 2%;
+    background:linear-gradient(to right,#bdc3c7,#2c3e50);
+    margin:2%;
+}
+
+/* MEDIA QUERIES  */
+@media(min-width:300px) And (max-width:500px)
+{
+    .nav-item :hover
+    {
+        background-color:rgba(0,0,0,0.5);
+    }
+    .navbar-brand
+    {
+        font-size:2rem;
+    }
+    .container h1 
+    {
+        font-size:2.5rem;
+    }
+    .button
+    {
+        width:50%;
+    }
+    h5.card-title {
+        font-size:10px;
+        
+    }
+    .card-body
+    {
+        padding: 2px;
+        font-family: 'Josefin Slab', serif;
+    }
+    #third-section:hover .images
+   {
+        filter: grayscale(40%);
+   }
+    .third-heading
+   {
+       font-size:20px;
+       font-family: 'Berkshire Swash', cursive;
+       margin-bottom: 0;
+       
+   }
+   #third-section:hover .third-heading
+   {
+    background:linear-gradient(#f12711,#f5af19);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;   
+   }
+   .myimage{
+       /* object-fit: fill;     */
+       height: 15vh;
+       object-fit: fill;
+   }
+   .round{
+       height:10vh;
+   }
+   #fifth-section p{
+    font-size:10px;
+   }
+   .mycard{
+       padding:1% 3%;
+       margin:0;
+   }
+
+}
+@media(min-width:500px) And (max-width:768px)
+{
+    .myimage{
+        /* object-fit: fill;     */
+        height: 20vh;
+        object-fit: fill;
+    }
+    .round{
+        height:20vh;
+    }
+    .mycard{
+        padding:1% 3%;
+        margin:0;
+    }
+    .navbar-brand
+    {
+        font-size:2rem;
+    }
+    .container h1 
+    {
+        font-size:2.5rem;
+    }
+    .button
+    {
+        width:50%;
+    }
+    h5.card-title {
+        font-size:15px;
+        
+    }
+    .card-body
+    {
+        padding: 2px;
+        font-family: 'Josefin Slab', serif;
+    }
+}
